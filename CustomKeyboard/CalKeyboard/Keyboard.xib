@@ -1,35 +1,245 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="CalKeyboard" customModuleProvider="target">
             <connections>
+                <outlet property="Delete" destination="SbL-L1-AXb" id="jqE-C1-DdW"/>
+                <outlet property="Return" destination="R9v-CA-stG" id="hyx-MR-nJs"/>
+                <outlet property="ball_button" destination="szM-wD-P9V" id="EBh-LA-GjF"/>
+                <outlet property="dj_khaled_button" destination="OJa-Da-HCC" id="xZ3-Xl-wRt"/>
+                <outlet property="drake_button" destination="86R-Cb-sMf" id="52p-UL-UmL"/>
+                <outlet property="kimButton" destination="8Wg-Te-4vP" id="j9P-rA-AvY"/>
+                <outlet property="kobe_button" destination="y7e-VJ-BVL" id="GDZ-DB-RVb"/>
                 <outlet property="nextKeyboardButton" destination="gRt-12-JcF" id="CWQ-gG-G2m"/>
+                <outlet property="space_button" destination="rXf-kN-Ddm" id="bZb-W7-S2M"/>
+                <outlet property="steph_button" destination="wMQ-JJ-81L" id="Mes-Hh-bUH"/>
+                <outlet property="waves_butto" destination="lcN-3q-PhL" id="4sh-k4-alA"/>
+                <outlet property="yeezy_button" destination="Dno-Hc-jc8" id="mgY-VN-2C8"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="center" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <rect key="frame" x="0.0" y="0.0" width="372" height="269"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
-                    <rect key="frame" x="8" y="162" width="30" height="30"/>
+                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="niN-TU-0zA">
+                    <rect key="frame" x="28" y="97" width="50" height="42"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJa-Da-HCC">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="XAf-7A-zv1"/>
+                                <constraint firstAttribute="height" constant="42" id="sVa-1g-jg7"/>
+                            </constraints>
+                            <state key="normal" title="Another ONE!!" image="khaled">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="MoN-tI-031"/>
+                            </connections>
+                        </button>
+                    </subviews>
                     <constraints>
-                        <constraint firstAttribute="width" constant="30" id="eu0-xj-Jov"/>
-                        <constraint firstAttribute="height" constant="30" id="rFT-bm-aBM"/>
+                        <constraint firstItem="OJa-Da-HCC" firstAttribute="centerY" secondItem="niN-TU-0zA" secondAttribute="centerY" id="9uA-LT-4hf"/>
                     </constraints>
-                    <state key="normal" title="N"/>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hcc-8j-NUY">
+                    <rect key="frame" x="28" y="46" width="45" height="43"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86R-Cb-sMf">
+                            <rect key="frame" x="0.0" y="0.0" width="45" height="43"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="DbT-gO-VIu"/>
+                                <constraint firstAttribute="width" constant="45" id="WUa-5z-WRY"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="43" id="dOT-3c-ZTX"/>
+                                <constraint firstAttribute="height" constant="43" id="qhc-Qh-2Qw"/>
+                            </constraints>
+                            <state key="normal" title="I can tell that you been practi-cing.." image="drizzy">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="vET-B7-6uS"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="86R-Cb-sMf" firstAttribute="centerY" secondItem="Hcc-8j-NUY" secondAttribute="centerY" id="DBx-V3-U0a"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SbL-L1-AXb">
+                    <rect key="frame" x="296" y="46" width="50" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="FbI-5D-rYH"/>
+                        <constraint firstAttribute="width" constant="50" id="agL-3e-4s2"/>
+                    </constraints>
+                    <state key="normal" title="Delete" image="delete">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="aaN-dg-10i"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcN-3q-PhL">
+                    <rect key="frame" x="158" y="46" width="50" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="7T8-Wm-idP"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="maB-o9-9c5"/>
+                        <constraint firstAttribute="height" constant="43" id="uzA-UG-UoC"/>
+                    </constraints>
+                    <state key="normal" title="Smoovee.." image="wave">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="JnD-GW-iU4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dno-Hc-jc8">
+                    <rect key="frame" x="95" y="46" width="50" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="0BZ-n8-iMI"/>
+                        <constraint firstAttribute="width" constant="50" id="wGy-Xy-Xjt"/>
+                    </constraints>
+                    <state key="normal" title="YEEZUSS!!" image="yeezus">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="egm-Yw-34w"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7e-VJ-BVL">
+                    <rect key="frame" x="296" y="97" width="50" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="5Ol-xh-zbr"/>
+                        <constraint firstAttribute="width" constant="50" id="SsS-BZ-Yaf"/>
+                    </constraints>
+                    <state key="normal" title="KOBE!!" image="kobe">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="qN5-JI-Qhb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMQ-JJ-81L">
+                    <rect key="frame" x="226" y="97" width="50" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Lha-pk-I89"/>
+                        <constraint firstAttribute="height" constant="42" id="tar-KH-5xM"/>
+                    </constraints>
+                    <state key="normal" title="Steph Curry with the..." image="steph">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="HxV-cf-zym"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szM-wD-P9V">
+                    <rect key="frame" x="160" y="97" width="41" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="20" id="DN1-01-mHp"/>
+                        <constraint firstAttribute="height" constant="42" id="DnB-cA-ebV"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="OtR-RF-Qyf"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="cCe-IO-uGp"/>
+                        <constraint firstAttribute="width" constant="50" id="sPY-Dc-xcN"/>
+                    </constraints>
+                    <state key="normal" title="We out to Ball" image="ball">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="nRm-I2-B6I"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="center" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Wg-Te-4vP">
+                    <rect key="frame" x="95" y="97" width="50" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="FRl-ID-DMR"/>
+                        <constraint firstAttribute="height" constant="42" id="Ni3-je-HiI"/>
+                    </constraints>
+                    <state key="normal" title="CAKES!!" image="k.jpg" backgroundImage="back">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="tUR-Jd-fWb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9L4-ft-0i8">
+                    <rect key="frame" x="216" y="46" width="70" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="Uge-vg-gsR"/>
+                        <constraint firstAttribute="width" constant="70" id="hGK-yS-Nce"/>
+                    </constraints>
+                    <state key="normal" title="Warriors are too raw." backgroundImage="warriors">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="ldA-oN-waD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXf-kN-Ddm">
+                    <rect key="frame" x="116" y="156" width="140" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="0Ea-G5-bAG"/>
+                        <constraint firstAttribute="height" constant="20" id="Kgu-I5-9iu"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="U3h-4s-3fL"/>
+                    </constraints>
+                    <state key="normal" title="Space" backgroundImage="back">
+                        <color key="titleColor" red="0.66032608699999995" green="0.13631492100000001" blue="0.65809962150000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="2J9-al-wik"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
+                    <rect key="frame" x="28" y="156" width="50" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="DlE-l7-Uxp"/>
+                        <constraint firstAttribute="width" constant="50" id="eu0-xj-Jov"/>
+                        <constraint firstAttribute="height" constant="20" id="rFT-bm-aBM"/>
+                    </constraints>
+                    <state key="normal" title="Next" backgroundImage="back">
+                        <color key="titleColor" red="0.66032608699999995" green="0.13631492100000001" blue="0.65809962150000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9v-CA-stG">
+                    <rect key="frame" x="296" y="156" width="50" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="43" id="0B4-cN-6yZ"/>
+                        <constraint firstAttribute="width" constant="50" id="Frs-1P-2RT"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="azb-1U-bJp"/>
+                        <constraint firstAttribute="height" constant="20" id="oZ2-OG-PuD"/>
+                    </constraints>
+                    <state key="normal" title="Return" backgroundImage="back">
+                        <color key="titleColor" red="0.66032608699999995" green="0.13631492100000001" blue="0.65809962150000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="LrY-gO-Q6h"/>
+                    </connections>
                 </button>
             </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="gRt-12-JcF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="LUD-YX-JVD"/>
-                <constraint firstAttribute="bottom" secondItem="gRt-12-JcF" secondAttribute="bottom" constant="8" id="tEE-h3-FZa"/>
+                <constraint firstItem="y7e-VJ-BVL" firstAttribute="top" secondItem="SbL-L1-AXb" secondAttribute="bottom" constant="8" symbolic="YES" id="gSN-LD-zMd"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="605.5" y="542"/>
+            <point key="canvasLocation" x="724" y="114.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="back" width="313" height="446"/>
+        <image name="ball" width="120" height="120"/>
+        <image name="delete" width="128" height="128"/>
+        <image name="drizzy" width="144" height="177"/>
+        <image name="k.jpg" width="200" height="220"/>
+        <image name="khaled" width="144" height="144"/>
+        <image name="kobe" width="115" height="113"/>
+        <image name="steph" width="97" height="119"/>
+        <image name="warriors" width="500" height="330"/>
+        <image name="wave" width="220" height="200"/>
+        <image name="yeezus" width="204" height="288"/>
+    </resources>
 </document>
